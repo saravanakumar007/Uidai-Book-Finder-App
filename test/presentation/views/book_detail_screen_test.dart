@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:uidai/domain/entities/book.dart';
-import 'package:uidai/domain/repositories/book_repository.dart';
 import 'package:uidai/presentation/views/book_detail_screen.dart';
-
-class MockBookRepository extends Mock implements BookRepository {}
+import '../../domain/repositories/book_repository_test.mocks.dart';
 
 void main() {
   group('BookDetailScreen Widget Tests', () {

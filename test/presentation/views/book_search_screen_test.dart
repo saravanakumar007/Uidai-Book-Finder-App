@@ -3,11 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:provider/provider.dart';
 import 'package:uidai/domain/entities/book.dart';
-import 'package:uidai/domain/repositories/book_repository.dart';
 import 'package:uidai/presentation/view_models/book_search_viewmodel.dart';
 import 'package:uidai/presentation/views/book_search_screen.dart';
-
-class MockBookRepository extends Mock implements BookRepository {}
+import '../../domain/repositories/book_repository_test.mocks.dart';
 
 void main() {
   group('BookSearchScreen Widget Tests', () {
